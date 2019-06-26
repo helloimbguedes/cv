@@ -1,0 +1,30 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "This project is the digital version of bguedes cv",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "start:dev": "webpack-dev-server --mod development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloimbguedes/cv.git"
+  },
+  "keywords": [],
+  "author": "bguedes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helloimbguedes/cv/issues"
+  },
+  "homepage": "https://github.com/helloimbguedes/cv#readme",
+  "dependencies": {
+    "global": "^4.4.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.6",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
