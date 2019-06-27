@@ -1,6 +1,18 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  entry: "./src/app.js",
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  },
   devServer: {
     stats: "errors-only",
     overlay: true,
@@ -10,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "BGuedes CV"
+      template: "./src/app.html"
     })
   ]
 };
