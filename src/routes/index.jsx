@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Homepage from "./homepage";
+import Homepage from "../un-atomic/_templates/homepage";
 
 const Router = () => (
   <BrowserRouter>
