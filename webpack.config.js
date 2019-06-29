@@ -20,6 +20,9 @@ module.exports = {
     port: process.env.PORT,
     open: true
   },
+  resolve: {
+    mainFiles: ["index.js", "index.jsx"]
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/app.html"
